@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Counter from "./components/counter";
 import myaudio from "./assets/song.mp3"
+import Footer from "./components/Footer";
 import './styles/App.scss';
 
 function App() {
@@ -91,6 +92,7 @@ function App() {
           handleReset={handleReset}
         />
       </main>
+      <Footer/>
     </div>
   );
 }
