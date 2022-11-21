@@ -24,7 +24,9 @@ function App() {
 
     if (getSec <= 59 && getSec >= 0) setCountSec(+second.current.value);
     else setCountSec(0);
+
   }
+
 
   const handleReset = () => {
     setCountMin(0);
@@ -63,12 +65,12 @@ function App() {
       audio.loop = true;
       setControl(0);
     } else if (isRunning && countMin === 0 && countSec === 0) {
-      audio.play();
-      audio.loop = true;
       setControl(0);
       clearInterval(interval);
-      alert('ACABOOOOOOOU!');
+      audio.pause();
+      audio.currentTime = 0;
       setIsRunning(false);
+      alert('Seu tempo acabou...');
     }
 
     return () => clearInterval(interval);

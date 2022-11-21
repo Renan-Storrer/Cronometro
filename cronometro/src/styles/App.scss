@@ -7,7 +7,11 @@
 .App {
   width: 100vw;
   height: 100vh;
-  // background: url('../assets/rainGif.gif') no-repeat center center fixed;
+  background: url('../assets/st.gif') no-repeat center center;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,12 +19,12 @@
   font-family: 'Righteous', cursive;
 
   h1{
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     font-size: 60px;
     color: #000000;
-    border: solid 3px black;
+    border: solid 3px rgb(43, 43, 43);
     border-radius: 10px;
-    background-color: #ff0000;
+    background-color: rgba(102, 102, 102, 0.5);
     padding: 40px;
   }
 
