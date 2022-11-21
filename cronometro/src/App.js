@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Counter from "./components/counter";
 import myaudio from "./assets/song.mp3"
+import './styles/App.scss';
 
 function App() {
   const getYear = new Date().getFullYear();
@@ -75,7 +76,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Contador App</h1>
+        <h1>STRANGER TIMER</h1>
       </header>
       <main>
         <Counter

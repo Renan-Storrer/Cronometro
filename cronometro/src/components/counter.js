@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/Counter.scss';
 
 function Counter({
   minute,
@@ -13,7 +14,7 @@ function Counter({
   return (
     <div className="Counter">
       <div id="inputs">
-        <input maxLength="1440" minLength="0" type="number" ref={minute} onChange={handleChange} value={countMin} />
+        <input id='minutes' maxLength="1440" minLength="0" type="number" ref={minute} onChange={handleChange} value={countMin} />
         <span>:</span>
         <input maxLength="59" minLength="0" type="number" ref={second} onChange={handleChange} value={countSec} />
       </div>

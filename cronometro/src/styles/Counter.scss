@@ -1,0 +1,69 @@
+.Counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: #ff0000;
+
+  #inputs {
+    display: flex;
+
+    input {
+      background-color: #9e8f8f;
+      border: 3px solid black;
+      width: 80px;
+      height: 50px;
+      text-align: center;
+      font-size: 28px;
+      border-radius: 10px;
+    }
+
+    span {
+      font-size: 40px;
+      margin: 0 20px;
+      color: #000000;
+    }
+  }
+
+  #btns {
+    button {
+      border: 1px;
+      margin-left: 2rem;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 2rem;
+      font-weight: bolder;
+      font-size: 20px;
+      color: #ebebeb;
+    }
+
+    #start {
+      background-color: #000000;
+
+      &:hover {
+        background-color: #00aa00;
+      }
+    }
+
+    #stop {
+      background-color: #000000;
+
+      &:hover {
+        background-color: #f80000;
+      }
+    }
+
+    #reset {
+      background-color: #000000;
+
+      &:hover {
+        background-color: #0000ff;
+      }
+    }
+  }
+
+}
