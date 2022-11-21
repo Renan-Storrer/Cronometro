@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Counter from "./components/counter";
+import myaudio from "./assets/song.mp3"
 
 function App() {
   const getYear = new Date().getFullYear();
@@ -8,6 +9,7 @@ function App() {
   const [countSec, setCountSec] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const [control, setControl] = useState(0);
+  const [audio, setAudio] = useState(new Audio(myaudio));
 
   const minute = useRef();
   const second = useRef();
@@ -28,6 +30,8 @@ function App() {
     setCountSec(0);
     setIsRunning(false);
     setControl(0);
+    audio.pause();
+    audio.currentTime = 0;
   };
 
   useEffect(() => {
@@ -35,10 +39,14 @@ function App() {
 
     if (control === 0 && isRunning) {
       setControl(1);
+      audio.play();
+      audio.loop = true;
     }
 
     if (control === 1 && !isRunning) {
       setControl(0);
+      audio.play();
+      audio.loop = true;
     }
 
     if (isRunning && countMin >= 0 && countSec > 0) {
@@ -50,8 +58,12 @@ function App() {
       setCountSec(() => 59);
     } else if (!isRunning && countSec !== 0) {
       clearInterval(interval);
+      audio.play();
+      audio.loop = true;
       setControl(0);
     } else if (isRunning && countMin === 0 && countSec === 0) {
+      audio.play();
+      audio.loop = true;
       setControl(0);
       clearInterval(interval);
       alert('ACABOOOOOOOU!');
