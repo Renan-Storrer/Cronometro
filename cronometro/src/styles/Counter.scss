@@ -1,0 +1,73 @@
+.Counter {
+  margin-bottom: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: rgba(102, 102, 102, 0.5);
+
+  #inputs {
+    display: flex;
+
+    input {
+      background-color: rgba(153, 153, 153, 0.5);
+      border: 3px solid black;
+      width: 80px;
+      height: 50px;
+      text-align: center;
+      font-size: 28px;
+      border-radius: 10px;
+    }
+
+    span {
+      font-size: 40px;
+      margin: 0 20px;
+      color: #000000;
+    }
+  }
+
+  #btns {
+    button {
+      border: 3px solid black;
+      margin-left: 2rem;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 2rem;
+      font-weight: bolder;
+      font-size: 20px;
+      color: #ebebeb;
+    }
+
+    #start {
+      background-color: #000000;
+
+      &:hover {
+        background-color: #5c685c;
+        // border: black;
+      }
+    }
+
+    #stop {
+      background-color: #000000;
+
+      &:hover {
+        background-color: #5c685c;
+        // border: black;
+      }
+    }
+
+    #reset {
+      background-color: #000000;
+
+      &:hover {
+        background-color: #5c685c;
+        // border: black;
+      }
+    }
+  }
+
+}
