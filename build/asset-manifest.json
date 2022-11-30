@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Stranger_Timer/static/css/main.6552b3dd.css",
+    "main.js": "/Stranger_Timer/static/js/main.f9932086.js",
+    "static/js/787.50378447.chunk.js": "/Stranger_Timer/static/js/787.50378447.chunk.js",
+    "static/media/song.mp3": "/Stranger_Timer/static/media/song.9744c7e379f48d917a2d.mp3",
+    "static/media/st.gif": "/Stranger_Timer/static/media/st.ba3926660654cd2c2ba3.gif",
+    "index.html": "/Stranger_Timer/index.html",
+    "main.6552b3dd.css.map": "/Stranger_Timer/static/css/main.6552b3dd.css.map",
+    "main.f9932086.js.map": "/Stranger_Timer/static/js/main.f9932086.js.map",
+    "787.50378447.chunk.js.map": "/Stranger_Timer/static/js/787.50378447.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6552b3dd.css",
+    "static/js/main.f9932086.js"
+  ]
+}
